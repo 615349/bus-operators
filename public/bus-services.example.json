@@ -1,0 +1,56 @@
+{
+  "operators": [
+    {
+      "name": "Sydney Buses",
+      "date": "25/09/2021",
+      "routes": [
+        {
+          "id": "42612",
+          "routeVariant": "891 2 1",
+          "deviationFromTimetable": 77
+        },
+        {
+          "id": "29016",
+          "routeVariant": "400 1 1",
+          "deviationFromTimetable": 340
+        },
+        {
+          "id": "90467",
+          "routeVariant": "393 1 1",
+          "deviationFromTimetable": 220
+        },
+        {
+          "id": "88836",
+          "routeVariant": "M20 1 0",
+          "deviationFromTimetable": -287
+        },
+        {
+          "id": "79367",
+          "routeVariant": "L21 2 1",
+          "deviationFromTimetable": 347
+        }
+      ]
+    },
+    {
+      "name": "Westbus",
+      "date": "25/09/2021",
+      "routes": [
+        {
+          "id": "94811",
+          "routeVariant": "664 2 1",
+          "deviationFromTimetable": 164
+        },
+        {
+          "id": "62788",
+          "routeVariant": "UNKNOWN",
+          "deviationFromTimetable": null
+        },
+        {
+          "id": "14221",
+          "routeVariant": "834 1 1",
+          "deviationFromTimetable": 423
+        }
+      ]
+    }
+  ]
+}
