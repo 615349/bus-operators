@@ -1,5 +1,6 @@
 import Header from 'Components/Header';
 import OperatorList from 'Components/OperatorList';
+import OperatorDetails from 'Components/OperatorDetails';
 import useFetch from 'Utils/useFetch';
 import { BusApiResponse } from 'Constants/types';
 import { Wrapper, Main, Center } from './App.styles';
@@ -27,6 +28,11 @@ function App() {
     setShowDetailsView(true);
   };
 
+  const onClickBack = () => {
+    setActiveOperatorId(-1);
+    setShowDetailsView(false);
+  };
+
   return (
     <Wrapper>
       <Header />
@@ -47,10 +53,16 @@ function App() {
             onClickBusOperator={onClickBusOperator}
           />
         )}
+        {!loading && !error && data && showDetailsView && (
+          <OperatorDetails
+            operator={data.operators[activeOperatorId]}
+            localStorageKey={`operator-${activeOperatorId}`}
+            onClickBack={onClickBack}
+          />
+        )}
       </Main>
     </Wrapper>
   );
 }
 
 export default App;
-

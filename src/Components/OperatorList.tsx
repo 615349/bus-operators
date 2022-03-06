@@ -1,5 +1,6 @@
 import { OperatorType } from "Constants/types";
-import { Title, Operators, Operator, OperatorName, OperatorInner, OperatorDate } from './OperatorList.styles';
+import { Operators, Operator, OperatorName, OperatorInner, OperatorDate } from './OperatorList.styles';
+import { Title } from 'Constants/styles';
 import { MouseEvent } from 'react';
 
 type OperatorListType = {
